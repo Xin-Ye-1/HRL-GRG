@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+body{
+	background-color:#E0E0E0;
+
+}
+h1.big,p,h2,h3{
+	 font-family: 'HankenGroteskRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+}
+
+.button {
+    background-color: #323; /* Green */
+    color: white;
+    padding: 8px;
+	width: 60%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #323;
+    border-radius: 32px!important;
+}
+/* Darker background on mouse-over */
+.button:hover {
+  background-color: #ddd;
+  color:black;
+}
+/* Header/logo Title */
+.header {
+    padding: 50px;
+    text-align: center;
+    /*background: #313;*/
+    background: white;
+    color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #323;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    background-color: white;
+    padding: 30px;
+}
+
+/* Main column */
+.main {   
+    background-color: white;
+    padding: 10px;
+	min-height:900px;
+	margin-bottom:100px;
+}
+/* Footer */
+.col-lg-12,.col-sm-12 {
+	font-size:15px;
+/*  background: #323;
+*/
+  background: white;
+  /*color:black;*/
+	width: 100%;
+}
+
+.col-md-5 {
+	font-size:14px;
+    background: white;
+}
+
+.col-md-7 {
+	font-size:15px;
+    background: white;
+}
+
+.box{
+  box-model: border-box;
+  border: 10px solid transparent;
+  background-clip:padding-box;
+}
+
+.box12{
+  box-model: border-box;
+  border: 10px solid transparent;
+  background-clip:padding-box;
+}
+/*h3{
+    display:inline;
+    background-color:green;
+    color:#fff;
+}*/
+.right.carousel-control, .left.carousel-control {
+    opacity: 0;
+    filter:alpha(opacity=0); /* IE support */
+}

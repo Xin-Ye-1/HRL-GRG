@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>HRL-GRG</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="static/styles/index.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+        <link rel="icon" href="static/images/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+         <!--   JS IMPORTS   -->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js" integrity="sha256-iaqfO5ue0VbSGcEiQn+OeXxnxAMK2+QgHXIDA5bWtGI=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js" integrity="sha256-Gn7MUQono8LUxTfRA0WZzJgTua52Udm1Ifrk5421zkA=" crossorigin="anonymous"></script>
+<!--         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"/> -->
+        <link rel="stylesheet" href="static/styles/prism.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+      <style>
+        p.rank{
+          padding-left:50px;
+        }
+        body {
+          font-family: 'HankenGroteskRegular';
+          background-color:#E0E0E0;
+        }
+      </style>
+      <body>
+     
+      <div class="header">
+           <center><span style="font-size:38px;font-weight:bold;width=600px">Hierarchical and Partially Observable Goal-driven Policy Learning with<br> Goals Relational Graph</span></center><br>
+           <center><span style="font-size:20px"><a href="http://www.public.asu.edu/~xinye1/" target="_blank">Xin Ye</a> and <a href="https://yezhouyang.engineering.asu.edu/" target="_blank">Yezhou Yang</a> <br> Active Perception Group, Arizona State University</span></center><br>
+           <center><span style="font-size:18px">Accepted at CVPR, 2021</span></center>
+           <table align=center width=200px>
+             <tr>
+              <td align=center width=100px><center><span style="font-size:18px"><a href="https://arxiv.org/pdf/2103.01350.pdf">[Paper]</a></span></center></td>
+              <td align=center width=100px><center><span style="font-size:18px"><a href="https://github.com/Xin-Ye-1/HRL-GRG">[Code]</a></span></center></td>
+            <tr/>
+          </table>
+      </div> 
+
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-12 box">
+              <br>
+              <p>We present a novel two-layer hierarchical reinforcement learning approach equipped with a Goals Relational Graph (GRG) for tackling the partially observable goal-driven task, such as goal-driven visual navigation. Our GRG captures the underlying relations of all goals in the goal space through a Dirichlet-categorical process that facilitates: 1) the high-level network raising a sub-goal towards achieving a designated final goal; 2) the low-level network towards an optimal policy; and 3) the overall system generalizing unseen environments and goals. We evaluate our approach with two settings of partially observable goal-driven tasks --- a grid-world domain and a robotic object search task. Our experimental results show that our approach exhibits superior generalization performance on both unseen environments and new goals.</p>
+              <br>
+              <center><img src = "static/images/overview.png" width="80%"></img></center>
+              <br>
+              <br>
+            </div>
+
+            <div class="col-sm-12 box">
+              <br>
+              <center><span style="font-size:22px;width=600px">Demo Video</span></center>
+              <br>
+              <left><span style="font-size:20px;width=600px">Grid-world</span></left>
+              <br>
+              <br>
+              <table align=center width='100%'>
+                <tr>
+                  <td align=center width='25%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/grid_world/result1_unseen_env_seen_goal.mp4" type="video/mp4">
+                      </video>
+                  </td>
+                  <td align=center width='25%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/grid_world/result2_unseen_env_seen_goal.mp4" type="video/mp4">
+                      </video>
+                  </td>
+                  <td align=center width='25%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/grid_world/result3_unseen_env_unseen_goal.mp4" type="video/mp4">
+                      </video>
+                  </td>
+                  <td align=center width='25%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/grid_world/result4_unseen_env_unseen_goal.mp4" type="video/mp4">
+                      </video>
+                  </td>
+                </tr>
+                <tr>
+                  <td align=center colspan="2">
+                      <p><b>unseen</b> environments <b>seen</b> goals</p>  
+                  </td>
+                  <td align=center colspan="2">
+                      <p><b>unseen</b> environments <b>unseen</b> goals</p>  
+                  </td>
+                </tr>
+              </table>
+              <br>
+
+              <hr>
+
+              <br>
+              <left><span style="font-size:20px;width=600px">Robotic Object Search in <a href="https://ai2thor.allenai.org/ithor/" target="_blank">AI2-THOR</a></span></left>
+              <br>
+              <br>
+              <table align=center width='100%'>
+                <tr>
+                  <td align=center width='50%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/robotic_object_search/AI2-THOR/result1_kitchen_toaster.mp4" type="video/mp4">
+                      </video>
+                      <p>kitchen (toaster)</p>
+                  </td>
+                  <td align=center width='50%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/robotic_object_search/AI2-THOR/result2_living_room_painting.mp4" type="video/mp4">
+                      </video>
+                      <p>living room (painting)</p>
+                  </td>
+                </tr>
+                 <tr>
+                  <td align=center colspan="2">  
+                  </td>
+                </tr>
+                <tr>
+                  <td align=center width='50%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/robotic_object_search/AI2-THOR/result3_bedroom_mirror.mp4" type="video/mp4">
+                      </video>
+                      <p>bedroom (mirror)</p>
+                  </td>
+                  <td align=center width='50%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/robotic_object_search/AI2-THOR/result4_bathroom_towel.mp4" type="video/mp4">
+                      </video>
+                      <p>bathroom (towel)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td align=center colspan="2">
+                      <p><b>unseen</b> environments <b>unseen</b> goals</p>  
+                  </td>
+                </tr>
+              </table>
+              <br>
+
+              <hr>
+
+              <br>
+              <left><span style="font-size:20px;width=600px">Robotic Object Search in <a href="https://github.com/facebookresearch/house3d" target="_blank">House3D</a></span></left>
+              <br>
+              <br>
+              <table align=center width='100%'>
+                <tr>
+                  <td align=center width='50%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/robotic_object_search/House3D/result1_seen_env_seen_goal.mp4" type="video/mp4">
+                      </video>
+                      <p><b>seen</b> environment <b>seen</b> goal (television)</p>
+                  </td>
+                  <td align=center width='50%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/robotic_object_search//House3D/result2_seen_env_unseen_goal.mp4" type="video/mp4">
+                      </video>
+                      <p><b>seen</b> environment <b>unseen</b> goal (ottoman)</p>
+                  </td>
+                </tr>
+                 <tr>
+                  <td align=center colspan="2">  
+                  </td>
+                </tr>
+                <tr>
+                  <td align=center width='50%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/robotic_object_search/House3D/result3_unseen_env_seen_goal.mp4" type="video/mp4">
+                      </video>
+                      <p><b>unseen</b> environment <b>seen</b> goal (television)</p>
+                  </td>
+                  <td align=center width='50%'>
+                      <video style="width:90%;" autoplay muted loop controls>
+                        <source src="static/video/robotic_object_search/House3D/result4_unseen_env_unseen_goal.mp4" type="video/mp4">
+                      </video>
+                      <p><b>unseen</b> environment <b>unseen</b> goal (music)</p>
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <br>
+            </div>
+
+            <div class="col-sm-12 box">
+              <br>
+              <center><span style="font-size:22px;width=600px">Bibtex</span></center>
+              <br>
+              <p>If you find this work helpful, please consider citing: </p>
+              <pre><code style="text-align:left;">
+              @InProceedings{ye2021hierarchical,
+              author={Ye, Xin and Yang, Yezhou},
+              title={Hierarchical and Partially Observable Goal-driven Policy Learning with Goals Relational Graph},
+              booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+              month = {June},
+              year = {2021}
+              }
+              </code></pre>
+              <br>
+              <br>
+            </div>
+
+               
+       <!--        <hr>
+                <p>Download the V2C dataset</p>
+                <a href="https://drive.google.com/file/d/1GZpV6Mm60ASunFWU23LHCEtDU_uuWyNB/view?usp=sharing"><button class="button"><i class="fa  fa-download"></i> Download Annotations (38.1 MB)</button></a>
+                <a href="https://drive.google.com/drive/folders/1XMteYdtw0UXlqCnTKozkJR5WQbvtd1ba?usp=sharing"><button class="button"><i class="fa fa-download"></i> Download Video Features  (2.9 GB)</button></a> <br> <br>
+                Videos in V2C are inherited from MSR-VTT video dataset, we use the most common used 2D visual features by ImageNet pre-trained ResNet-152 model. 
+              <hr>
+                <p>Implementations</p>
+                We provide PyTorch implementations for the V2C completion tasks in:
+                <a href="https://github.com/jacobswan1/Video2Commonsense"><button class="button"><i class="fa fa-github" aria-hidden="true"></i> Github V2C-Completion Baseline</button></a>
+
+              <hr>         
+                <h3>Distribution and Usage</h3>
+                <p>V2C is curated from multiple online resources (MSR-VTT Video Dataset and ATOMIC Person Commonsense Dataset). 
+                Creation of V2C is purely research oriented. If you find our dataset or model helpful, please cite our paper
+                <p style="text-align:left;">
+                <small>
+                <code style="color:#e83e8c; line-height:2.0" ;="">
+                    @article{fang2020video2commonsense,<br>
+                    &nbsp;title={Video2commonsense: Generating commonsense descriptions to enrich video captioning},<br>
+                    &nbsp;author={Fang, Zhiyuan and Gokhale, Tejas and Banerjee, Pratyay and Baral, Chitta and Yang, Yezhou},<br>
+                    &nbsp;journal={arXiv preprint arXiv:2003.05162},<br>
+                    &nbsp;year={2020}<br>
+                    }
+                </code>
+                </small>
+                </p>
+                </p> 
+              <hr>   --> 
+        
+              </div>
+
+              </div>
+		        </div>
+
+
+          </body>
+      </html>
+

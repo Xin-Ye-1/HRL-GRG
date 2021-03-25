@@ -1,0 +1,68 @@
+a.fo:link{
+	color:#FF9933;
+}
+a.fo:visited{
+	color:#FF9933;
+}
+h1.big,p,h2,h3{
+   font-family: 'HankenGroteskRegular'; 
+   font-weight: normal; 
+   font-style: normal; 
+}
+li {
+	font-weight: normal;
+}
+
+.sidenav {
+    background-color: #313;
+    padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main {
+    margin-left: 200px; 
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.active {
+    background-color: #313;
+    color: white;
+}
+
+
+.dropdown-container {
+    display: none;
+    background-color: #313;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 30px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.col-md-3 {
+	background-color: #313;
+}
