@@ -1,7 +1,7 @@
 
 # Hierarchical and Partially Observable Goal-driven Policy Learning with Goals Relational Graph
 
-<img src="https://github.com/Xin-Ye-1/HRL-GRG/blob/main/overview.png" width="50%" height="50%" align=center />
+<img src="https://github.com/Xin-Ye-1/HRL-GRG/blob/main/overview.png" width="80%" height="80%" align=center />
 
 This is the source code for our HRL-GRG model and the baseline methods we mentioned in the paper. 
 
