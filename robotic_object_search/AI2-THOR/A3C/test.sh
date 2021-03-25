@@ -1,0 +1,34 @@
+#!/bin/bash
+
+set -e
+
+CURRENT_DIR=$(pwd)
+
+CUDA_VISIBLE_DEVICES=-1 python "${CURRENT_DIR}"/test.py \
+  --is_approaching_policy=False \
+  --max_episodes=1 \
+  --max_episode_steps=200 \
+  --max_lowlevel_episode_steps=20 \
+  --window_size=30 \
+  --history_steps=4 \
+  --epsilon=1 \
+  --epsilon=10000 \
+  --epsilon=0.1 \
+  --curriculum_training=False \
+  --highlevel_lr=0.0001 \
+  --lowlevel_lr=0.0001 \
+  --skip_frames=1 \
+  --lowlevel_update_freq=10 \
+  --highlevel_update_freq=100 \
+  --target_update_freq=100000 \
+  --batch_size=64 \
+  --replay_start_size=0 \
+  --load_model=False \
+  --continuing_training=False \
+  --pretrained_model_path="../A3C/result_me_for_pretrain/model" \
+  --model_path="${CURRENT_DIR}/result_me_pretrain/model" \
+  --num_threads=1 \
+  --num_train_scenes=20 \
+  --num_validate_scenes=5 \
+  --num_test_scenes=5 \
+  --min_step_threshold=0
