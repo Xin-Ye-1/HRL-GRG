@@ -1,4 +1,4 @@
-#### Scene Priors
+### Scene Priors
 
 This is a reimplementation of the [Scene Priors](https://arxiv.org/pdf/1810.06543.pdf) method.
 
@@ -6,7 +6,7 @@ Some minor differences are that we use [glove100d](https://nlp.stanford.edu/proj
 
 The folder `gcn` contains necessary data for the [Graph Convolutional Network (GCN)](https://arxiv.org/abs/1609.02907) in [Scene Priors](https://arxiv.org/pdf/1810.06543.pdf), including the adjacency matrix. The data is sourced from [savn](https://github.com/allenai/savn).
 
-##### Evaluation and Results
+#### Evaluation and Results
 
 To evaluate the method [Scene Priors](https://arxiv.org/pdf/1810.06543.pdf)  for the robotic object search task on [AI2-THOR](https://ai2thor.allenai.org/ithor/), and reproduce the results reported in the paper for the seen environments for seen goals as follows,
 
@@ -24,7 +24,7 @@ CUDA_VISIBLE_DEVICES=-1 python evaluate.py \
 ```
 To reproduce the results for the `seen environments unseen goals`, `unseen environments seen goals` and `unseen environments unseen goals`, specify the `evaluate_file` as `'../random_method/ssuo.txt'`, `'../random_method/usso.txt'` and `'../random_method/usuo.txt'` respectively.
 
-##### Training
+#### Training
 
 To train the [Scene Priors](https://arxiv.org/pdf/1810.06543.pdf)  method, run this command:
 
