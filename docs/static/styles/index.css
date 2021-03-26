@@ -97,6 +97,7 @@ h1.big,p,h2,h3{
   background: white;
   /*color:black;*/
 	width: 100%;
+
 }
 
 .col-md-5 {
@@ -113,6 +114,7 @@ h1.big,p,h2,h3{
   box-model: border-box;
   border: 10px solid transparent;
   background-clip:padding-box;
+
 }
 
 .box12{
