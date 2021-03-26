@@ -5,7 +5,7 @@
 
 This is the source code for our HRL-GRG model and the baseline methods we mentioned in the paper. 
 
-[paper](https://arxiv.org/pdf/2103.01350.pdf) | [project webpage]
+[paper](https://arxiv.org/pdf/2103.01350.pdf) | [project webpage](https://xin-ye-1.github.io/HRL-GRG/)
 
 ## Requirements
 
