@@ -24,7 +24,7 @@ Before running the robotic object search code on AI2-THOR, please download [our 
 
 Before running the robotic object search code on House3D, please download [our pre-processed data](https://drive.google.com/file/d/1sJwEkEGkeD2QoxaWCR3nD_Knsl-dW3__/view?usp=sharing) sourced from [House3D](https://github.com/facebookresearch/house3d) and extract at the `robotic_object_search/House3D` directory.
 
-Download [our pre-trained models](https://drive.google.com/file/d/15AhLJh4J1uJAEy33PlaLVK0Yl1KWj4Vx/view?usp=sharing) and put them in the corresponding code directories for training and/or evaluating our method.
+Download [our pre-trained models](https://drive.google.com/file/d/18G3ydoruYtdU9gIRlf6wwquX-_zLlxth/view?usp=sharing) and put them in the corresponding code directories for training and/or evaluating our method.
 
 ## Training
 
